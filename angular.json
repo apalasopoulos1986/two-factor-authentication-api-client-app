@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "two-factor-authentication-api-client-app"
+    }
+  },
+  "defaultProject": "two-factor-authentication-api-client-app",
+  "cli": {
+    "analytics": false
+  }
 }
