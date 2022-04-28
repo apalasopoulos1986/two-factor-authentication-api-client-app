@@ -22,5 +22,4 @@ export class ListComponent implements OnInit {
             .subscribe(() => this.users = this.users.filter(x => x.id !== id));
     }
 }
-© 2022 GitHub, Inc.
-Terms
+

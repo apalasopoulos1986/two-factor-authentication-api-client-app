@@ -20,4 +20,3 @@ export class ErrorInterceptor implements HttpInterceptor {
         }))
     }
 }
-© 2022 GitHub, Inc.

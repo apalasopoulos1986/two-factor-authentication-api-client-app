@@ -4,7 +4,7 @@ import { Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 
-@@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: 'root' })
 export class AlertService {
     private subject = new Subject<Alert>();
     private defaultId = 'default-alert';

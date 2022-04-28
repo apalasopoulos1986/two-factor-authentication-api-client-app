@@ -3,7 +3,7 @@ import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/c
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { AccountService } from '../_services';
-@@Injectable()
+@Injectable()
 export class JwtInterceptor implements HttpInterceptor {
     constructor(private accountService: AccountService) { }
 
