@@ -17,8 +17,4 @@ import { ContactFormComponent } from './contactForm.component';
         ContactFormComponent
     ]
 })
-
-
-
-
 export class ContactsModule{}
