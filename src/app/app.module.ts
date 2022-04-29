@@ -1,7 +1,7 @@
 
 import { DataService } from './_services/dataService';
 import { ToastService } from './_services';
-import { AppToastsComponent } from './_components/appToasts.component';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -12,20 +12,26 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
   imports: [
+      CommonModule,
       BrowserModule,
       ReactiveFormsModule,
       HttpClientModule,
       AppRoutingModule,
-      NgbModule
+      NgbModule,
+      BrowserAnimationsModule, // required animations module
+      ToastrModule.forRoot() // ToastrModule added
   ],
   declarations: [
       AppComponent,
       AlertComponent,
-      AppToastsComponent,
       HomeComponent
   ],
   providers: [ToastService,DataService,

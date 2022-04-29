@@ -5,16 +5,25 @@ import { ContactsRoutingModule } from './contacts-routing.module';
 import { LayoutComponent } from './layout.component';
 import { ContactListComponent } from './contactList.component';
 import { ContactFormComponent } from './contactForm.component';
+
+import { AppToastsComponent } from '../_components';
+import { ToastrModule } from 'ngx-toastr';
+
+
+
+
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        ContactsRoutingModule 
+        ContactsRoutingModule,
+        ToastrModule.forRoot() // ToastrModule added
     ],
     declarations: [
         LayoutComponent,
         ContactListComponent,
-        ContactFormComponent
+        ContactFormComponent,
+        AppToastsComponent
     ]
 })
 export class ContactsModule{}
