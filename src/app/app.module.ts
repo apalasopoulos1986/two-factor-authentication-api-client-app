@@ -14,7 +14,7 @@ import { HomeComponent } from './home';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {GoogleLoginProvider, SocialLoginModule} from 'angularx-social-login';
+// import {GoogleLoginProvider, SocialLoginModule} from 'angularx-social-login';
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -36,16 +36,16 @@ import { ToastrModule } from 'ngx-toastr';
       HomeComponent
   ],
   providers: [ToastService,DataService,
-      {provide: 'SocialAuthServiceConfig',
-        useValue: {
-        autoLogin: true,
-        providers: [
-          {
-            id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider('77961592688-i075ppou2674dorbakbfh8flcg93oh9u.apps.googleusercontent.com')
-          }
-                    ]}
-      },
+      // {provide: 'SocialAuthServiceConfig',
+      //   useValue: {
+      //   autoLogin: true,
+      //   providers: [
+      //     {
+      //       id: GoogleLoginProvider.PROVIDER_ID,
+      //       provider: new GoogleLoginProvider('77961592688-i075ppou2674dorbakbfh8flcg93oh9u.apps.googleusercontent.com')
+      //     }
+      //               ]}
+      // },
       { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
       { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     
